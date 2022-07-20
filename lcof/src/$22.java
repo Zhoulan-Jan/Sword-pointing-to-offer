@@ -21,4 +21,14 @@ public class $22 {
 
         return slow;
     }
+
+    //链表倒数第k个结点 //长度-k
+    public ListNode FindKthToTail(ListNode head, int k){
+        int offset = size(head) - k;
+        for (int i = 0; i < offset; i++) {
+            head = head.next;
+        }
+        return head;
+    }
+
 }
